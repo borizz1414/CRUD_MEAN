@@ -1,0 +1,21 @@
+
+<header>
+<ul>
+  <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mi</a></li>
+  <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a></li>
+  <li class="logo"><a href="#">BL</a></li>
+  <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear proyecto</a></li>
+
+
+</ul>
+</header>
+
+<section id="content">
+
+
+<router-outlet></router-outlet>
+</section>
+
+<footer>
+  Desarrollado por <b>Boris Lopez &copy;</b>
+</footer>

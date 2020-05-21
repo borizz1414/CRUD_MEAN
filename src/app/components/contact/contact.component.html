@@ -1,0 +1,17 @@
+<div class="container">
+<h1>Contacto</h1>
+Tamaño del slider: 
+<input type="number" [(ngModel)]="widthSlider" (keyup.enter)="cargarSlider()">
+<button (click)="cargarSlider()">Cargar slider</button>
+<button (click)="resetSlider()">Resetear slider</button>
+<div *ngIf="anchuraToSlider">
+
+<slider [anchura]="anchuraToSlider"
+        [etiquetas]="captions"
+        (conseguirAutor)="getAutor($event)"
+></slider>
+
+</div>
+  {{autor.nombre + " " + autor.website}}
+
+</div>
